@@ -140,10 +140,10 @@
     <vertexScaleByHeightFlag>false</vertexScaleByHeightFlag>
     <vertexScaleByHeight>158</vertexScaleByHeight>
     <waitProcessExitting>false</waitProcessExitting>
-    <pmxAssetPath>Assets/MMD/Zundamon/Zundamon_2025_MMD_A.pmx</pmxAssetPath>
+    <pmxAssetPath>Assets/Zundamon/Zundamon_2025_MMD_A.pmx</pmxAssetPath>
     <vmdAssetPathList />
     <fbxOutputPath>Assets/MMD/Zundamon_2025_MMD_A.fbx</fbxOutputPath>
-    <fbxAssetPath>Assets/MMD/Zundamon/Zundamon_2025_MMD_A.fbx</fbxAssetPath>
+    <fbxAssetPath>Assets/Zundamon/Zundamon_2025_MMD_A.fbx</fbxAssetPath>
     <bulletPhysicsVersion>_275</bulletPhysicsVersion>
     <useWineFlag>false</useWineFlag>
     <wine>Manual</wine>
