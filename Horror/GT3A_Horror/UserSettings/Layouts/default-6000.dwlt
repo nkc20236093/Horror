@@ -1225,9 +1225,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 3.6344082, y: 2.46662, z: 4.189115}
+    m_Target: {x: -4.684266, y: 7.1427035, z: 2.2987092}
     speed: 2
-    m_Value: {x: 3.6344082, y: 2.46662, z: 4.189115}
+    m_Value: {x: -4.684266, y: 7.1427035, z: 2.2987092}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1273,13 +1273,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.4559535, y: -0.5344668, z: 0.42938825, w: -0.5675287}
+    m_Target: {x: -0.54240614, y: -0.005802439, z: 0.0037413489, w: -0.84009534}
     speed: 2
-    m_Value: {x: -0.4559509, y: -0.53446376, z: 0.4293858, w: -0.5675255}
+    m_Value: {x: -0.54238915, y: -0.008322645, z: 0.0053685154, w: -0.840069}
   m_Size:
-    m_Target: 12.5924425
+    m_Target: 24.117138
     speed: 2
-    m_Value: 12.5924425
+    m_Value: 24.117138
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1709,23 +1709,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b8950000
+      m_SelectedIDs: ca970000
       m_LastClickedID: 0
-      m_ExpandedIDs: f0faffffca8f0000
+      m_ExpandedIDs: 5a8dfffffafaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Cube
-        m_OriginalName: Cube
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -97346
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 13}
@@ -1838,7 +1838,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: a43a0000
     m_LastClickedID: 15012
-    m_ExpandedIDs: 00000000b8950000ba950000bc950000
+    m_ExpandedIDs: 00000000ca970000cc970000ce970000d0970000d2970000d4970000d6970000d8970000da970000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1867,21 +1867,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000b8950000ba950000bc950000709600007896000006ae000008ae000082b0000098b00000
+    m_ExpandedIDs: ffffffff00000000ca970000cc970000ce970000d0970000d2970000d4970000d6970000d8970000da9700008c98000090980000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: EnemySpawner
+      m_OriginalName: EnemySpawner
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 57050
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 14}
