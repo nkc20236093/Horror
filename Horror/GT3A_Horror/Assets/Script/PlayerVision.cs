@@ -1,18 +1,57 @@
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class PlayerVision : MonoBehaviour
 {
+    [Header("PostPrcess設定")]
+    [SerializeField] PostProcessVolume volume;
+    LensDistortion lens;
+    ChromaticAberration chroma;
+    Vignette vignette;
+    [Header("確認用パラメーター")]
+    [SerializeField] float viewCounter = 0;
+    [SerializeField] float maxCount = 5;
+    [SerializeField] float decreaseRate = 0.5f;
+    [SerializeField] float increaseRate = 1;
+    [SerializeField] int seenNum = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        volume.profile.TryGetSettings(out lens);
+        volume.profile.TryGetSettings(out chroma);
+        volume.profile.TryGetSettings(out vignette);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (seenNum != 0) // 見ているので加算
+        {
+            viewCounter += increaseRate * Time.deltaTime;
+        }
+        else // 見てないので減算
+        {
+            viewCounter -= decreaseRate * Time.deltaTime;
+        }
+        viewCounter = Mathf.Clamp(viewCounter, 0, maxCount);
+        ApplyEffect(); // ポストプロセス適応
+        seenNum = 0;   // 見た目数をリセット
     }
+
+    void ApplyEffect()
+    {
+        float rate = viewCounter / maxCount;
+        chroma.intensity.value = Mathf.Lerp(0, 1.0f, rate);
+        vignette.intensity.value = Mathf.Lerp(0.0f, 0.7f, rate);
+        lens.intensity.value = Mathf.Lerp(0.0f, 100.0f, rate);
+        lens.scale.value = Mathf.Lerp(1.0f, 1.2f, rate);
+    }
+
+    public void AddSeenNum()
+    {
+        seenNum++;
+    }
+
     /// <summary>
     /// プレイヤーがターゲットを見たかチェック
     /// </summary>

@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-public class EnemyController : MonoBehaviour
+public class Eye_EnemyController : MonoBehaviour
 {
     [SerializeField]
     float viewAngle = 30, viewDistance = 10, // Ž‹–ìŠp‚Æ‹——£
