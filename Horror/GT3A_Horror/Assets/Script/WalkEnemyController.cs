@@ -7,6 +7,8 @@ public class WalkEnemyController : MonoBehaviour
     int currentIndex = 0;
     Transform player;
     NavMeshAgent agent;
+    AudioSource arart;
+    PlayerNoise noise;
 
     public enum State
     {
@@ -17,7 +19,8 @@ public class WalkEnemyController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.Find("Player").transform;
+        noise = player.GetComponent<PlayerNoise>();
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -28,6 +31,7 @@ public class WalkEnemyController : MonoBehaviour
         {
             case State.Patrol:
                 PatrolUpdate();
+                SearchPlayer();
                 break;
             case State.Chase:
                 ChaseUpdate();
@@ -47,5 +51,22 @@ public class WalkEnemyController : MonoBehaviour
         agent.SetDestination(wayPoints[currentIndex].position);
         currentIndex = (currentIndex + 1) % wayPoints.Length;
     }
-    void ChaseUpdate() { }
+    void SearchPlayer()
+    {
+        // 距離計算
+        float distance = Vector3.Distance(player.position, transform.position);
+        bool isNoise = noise.GetNoiseValue() > 0.0f;
+
+        // 仮(プレイヤーが音を立てているかチェック)
+        if (distance <= 10.0f && isNoise)
+        {
+            currentState = State.Chase;
+            agent.SetDestination(player.position);
+            arart.Play();
+        }
+    }
+    void ChaseUpdate() 
+    {
+        agent.SetDestination(player.position);
+    }
 }

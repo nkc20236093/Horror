@@ -1251,37 +1251,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764646071}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &831649026
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: MMD4Mecanim/MMDLit-NEXTEdge-Pass4
-  m_Shader: {fileID: 4800000, guid: 684f8af9b4ff4bc459588db5b0f6275d, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2001
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _EdgeSize: 0.005
-    - _PostfixRenderQueue: 1
-    m_Colors:
-    - _EdgeColor: {r: 0.39999998, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,22 +1544,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3291421578061585033, guid: 5f05b763aa612c0499d804fd405c4fc6, type: 3}
+      propertyPath: nextEdgeMaterial_Pass4
+      value: 
+      objectReference: {fileID: 1512415038}
+    - target: {fileID: 3291421578061585033, guid: 5f05b763aa612c0499d804fd405c4fc6, type: 3}
+      propertyPath: nextEdgeMaterial_Pass8
+      value: 
+      objectReference: {fileID: 1904716966}
     - target: {fileID: 4399131113787176634, guid: 5f05b763aa612c0499d804fd405c4fc6, type: 3}
       propertyPath: volume
       value: 
       objectReference: {fileID: 534403608}
-    - target: {fileID: 4399131113787176634, guid: 5f05b763aa612c0499d804fd405c4fc6, type: 3}
-      propertyPath: maxCount
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399131113787176634, guid: 5f05b763aa612c0499d804fd405c4fc6, type: 3}
-      propertyPath: decreaseRate
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399131113787176634, guid: 5f05b763aa612c0499d804fd405c4fc6, type: 3}
-      propertyPath: increaseRate
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5669276729431722433, guid: 5f05b763aa612c0499d804fd405c4fc6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2279,6 +2244,37 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!21 &1512415038
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MMD4Mecanim/MMDLit-NEXTEdge-Pass4
+  m_Shader: {fileID: 4800000, guid: 684f8af9b4ff4bc459588db5b0f6275d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _EdgeSize: 0.005
+    - _PostfixRenderQueue: 1
+    m_Colors:
+    - _EdgeColor: {r: 0.39999998, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &1534764756
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,6 +2511,37 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!21 &1904716966
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MMD4Mecanim/MMDLit-NEXTEdge-Pass8
+  m_Shader: {fileID: 4800000, guid: ff1e1d0bbf6980244a107d25ff535f9a, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _EdgeSize: 0.005
+    - _PostfixRenderQueue: 1
+    m_Colors:
+    - _EdgeColor: {r: 0.39999998, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &1906825329
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,37 +2871,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115336240}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!21 &2126175988
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: MMD4Mecanim/MMDLit-NEXTEdge-Pass8
-  m_Shader: {fileID: 4800000, guid: ff1e1d0bbf6980244a107d25ff535f9a, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2001
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _EdgeSize: 0.005
-    - _PostfixRenderQueue: 1
-    m_Colors:
-    - _EdgeColor: {r: 0.39999998, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &3252185973362705693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2943,6 +2939,10 @@ PrefabInstance:
       propertyPath: 'wayPoints.Array.data[3]'
       value: 
       objectReference: {fileID: 1906825330}
+    - target: {fileID: 7159467389809267529, guid: fb65f81ec9f4a45478fa2a9ff6c3d5aa, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
