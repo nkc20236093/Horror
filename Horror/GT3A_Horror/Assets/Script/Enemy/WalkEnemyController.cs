@@ -22,6 +22,7 @@ public class WalkEnemyController : MonoBehaviour
         player = GameObject.Find("Player").transform;
         noise = player.GetComponent<PlayerNoise>();
         agent = GetComponent<NavMeshAgent>();
+        arart = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -57,7 +58,7 @@ public class WalkEnemyController : MonoBehaviour
         float distance = Vector3.Distance(player.position, transform.position);
         bool isNoise = noise.GetNoiseValue() > 0.0f;
 
-        // 仮(プレイヤーが音を立てているかチェック)
+        // プレイヤーが音を立てているかチェック
         if (distance <= 10.0f && isNoise)
         {
             currentState = State.Chase;

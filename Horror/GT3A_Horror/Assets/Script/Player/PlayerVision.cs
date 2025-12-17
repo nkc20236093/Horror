@@ -45,6 +45,8 @@ public class PlayerVision : MonoBehaviour
         vignette.intensity.value = Mathf.Lerp(0.0f, 0.7f, rate);
         lens.intensity.value = Mathf.Lerp(0.0f, 100.0f, rate);
         lens.scale.value = Mathf.Lerp(1.0f, 1.2f, rate);
+        // ”­‹¶‚É‚æ‚éŒø‰Ê‰¹•Ï‰»
+        BGMManager.instance.SetMadnessLevel(rate);
     }
 
     public void AddSeenNum()
