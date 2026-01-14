@@ -1,0 +1,26 @@
+using UnityEngine;
+
+public class EnemyHit : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    // プレイヤーにヒットしたらリセット
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("Enemy Hit Player");
+            GameManager.Instance.RessetScene();
+        }
+    }
+}
+
